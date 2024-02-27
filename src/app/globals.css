@@ -25,3 +25,45 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.main {
+  display: flex; 
+  height: 100vh;
+}
+
+.model-container {
+  flex: 1; 
+  background: #333;
+}
+
+.left-container {
+  flex: 1; 
+  background: transparent; 
+  color: white; 
+  padding: 20px; 
+  overflow-y: auto;
+}
+
+.left-container h1 {
+  font-size: 3rem; 
+  margin-bottom: 20px;
+}
+
+.easel-art-container {
+  background: transparent;
+  justify-content: center; 
+  align-items: center;
+  top: 210px;
+  right: 275px;
+}
+
+.easel-art {
+  width: 250px; 
+  height: 250px;
+  /* slightly rotate the image on x axis */
+  transform: rotateX(40deg);
+  /* slightly rotate the image on y axis */
+  transform: rotateY(20deg);
+  /* slightly rotate the image on z axis */
+  transform: rotateZ(4.8deg);
+}
